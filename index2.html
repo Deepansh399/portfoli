@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: hsl(225, 24%, 27%);
+            padding: 20px;
+            margin: 0;
+            color: #fff;
+        }
+        
+        h1 {
+            color: #1D2951;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .header {
+            font-size: 30px;
+            background-color: transparent;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            max-width: 500px;
+            margin: 0 auto 20px;
+            font-family: 'Arial Black', Arial, sans-serif;
+            font-weight: bold;
+            transition: background-color 0.3s, opacity 0.3s;
+        }
+
+        .header:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            opacity: 0.9;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .article-link {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+            position: relative; 
+        }
+
+        .article-link:hover {
+            transform: translateY(-5px);
+        }
+
+        .article-title {
+            font-size: 20px;
+            color: #1D2951;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .article-description {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 40px; 
+        }
+
+        .reference-button {
+            position: absolute;
+            bottom: 10px; 
+            right: 10px;
+            background-color: #1D2951;
+            color: #ffffff;
+            padding: 8px 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .reference-button:hover {
+            background-color: #0e1a33;
+        }
+
+        .article-list {
+            counter-reset: list-counter;
+        }
+
+        /* Media Queries */
+        @media only screen and (max-width: 768px) {
+            .article-link {
+                padding: 15px;
+            }
+
+            .reference-button {
+                bottom: 5px;
+                right: 5px;
+            }
+        }
+  
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <p>Explore the Latest Research</p>
+    </div>
+    <div class="article-list">
+        <a href="https://docs.google.com/document/d/1ynNPtpawVaiC-FYl5hlWyKCqEj5L3idLpYS3M5IuODI/edit?usp=sharing" class="article-link">
+            <span class="reference-button">View Article</span> 
+            <div class="article-title">1). Dynamic Simulation of Dynamic Spectrum Allocation in Wireless Networks</div>
+            <div class="article-description">I have recently conducted an in-depth research study focusing on the dynamic simulation of dynamic spectrum allocation in wireless networks. This research delves into the intricate mechanisms behind spectrum allocation in wireless communication systems, with a particular emphasis on the dynamic nature of spectrum utilization. Through comprehensive simulations and analysis, my study sheds light on the challenges and opportunities presented by dynamic spectrum allocation, exploring its implications for improving the efficiency and reliability of wireless networks. The findings of this research contribute valuable insights to the field, offering potential solutions to enhance spectrum management strategies and optimize network performance in dynamic environments.</div>
+        </a>
+        <a href="https://drive.google.com/file/d/1bH01IFy26yBY86ueFXirXoV4g9Xb6b-X/view?usp=sharing" class="article-link">
+            <span class="reference-button">View Article</span> 
+            <div class="article-title">2). Understanding the Motivations Behind Voting: A Case Study on Indian Democracy</div>
+            <div class="article-description">Understanding the motivations behind voting is a critical aspect of studying the dynamics of democracy, particularly in a diverse and complex nation like India. In my research article, I delved into this intricate subject, aiming to uncover the underlying factors that drive individuals to participate in the electoral process. Through an extensive case study focused on Indian democracy, I explored various socio-political, economic, and cultural factors that influence voter behavior. By analyzing historical data, conducting surveys, and engaging in qualitative interviews, I sought to provide a comprehensive understanding of why people choose to vote or abstain from voting. Furthermore, I examined the role of identity, ideology, socio-economic status, and political awareness in shaping voter preferences and decisions. Ultimately, my research aims to contribute to the broader discourse on democratic participation and governance, shedding light on the motivations that drive citizens to engage in the electoral process in the Indian context.</div>
+        </a>
+    </div>
+   
+</body>
+</html>

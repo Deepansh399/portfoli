@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: hsl(225, 24%, 27%);
+            padding: 20px;
+            margin: 0;
+            color: #fff;
+        }
+
+        .hee {
+            font-family: 'Arial Black', Arial, sans-serif;
+            font-weight: bold;
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+            max-width: 500px;
+            margin: 0 auto 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .hee:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+        }
+
+        .certificate {
+            background-color: #ffffff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center; 
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .certificate:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
+        }
+
+        .certificate img.certificate-image {
+            display: none; 
+            margin: 0 auto 20px;
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 8px;
+        }
+
+        .certificate-title {
+            font-size: 24px; 
+            color: #1D2951;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+            transition: color 0.3s; 
+        }
+
+        .certificate-title:hover {
+            color: #2D3E5F; 
+        }
+
+        .certificate-description {
+            font-size: 16px;
+            color: #666;
+            text-align: justify; 
+            line-height: 1.6; 
+            padding: 0 20px;
+            margin-bottom: 20px;
+            transition: color 0.3s; 
+        }
+
+        .certificate-description:hover {
+            color: #333; 
+        }
+
+        .toggle-button {
+            background-color: #1D2951;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s; 
+        }
+
+        .toggle-button:hover {
+            background-color: #2D3E5F; 
+        }
+    </style>
+</head>
+<body>
+    <h1 class="hee">My Certificates</h1>
+    
+    <div class="certificate">        
+        <div class="certificate-title">Social Intern , Roots 2 Bloom</div>
+        <div class="certificate-description">During the internship, I engaged in in-depth discussions on 21 public policies, offering critical analysis. Providing feedback on policies and analyzing their mechanisms was a highlight. Industrial visits provided firsthand insights. Quiz rounds in July assessed our comprehension of covered materials.</div>
+
+        <img src="images/inter.png" alt="Certificate 1" class="certificate-image">
+        <button class="toggle-button">View Certificate</button>
+    </div>
+    
+    <div class="certificate">        
+        <div class="certificate-title">Introduction to Generative AI</div>
+        <div class="certificate-description">The "Introduction to Generative AI" certification from Coursera provided me with a comprehensive understanding of generative AI techniques, enabling me to create and deploy advanced AI models. This certification equipped me with practical skills to innovate in various fields, including art, music, and natural language processing, empowering me to contribute effectively to cutting-edge AI projects.</div>
+
+        <img src="images/ai.png" alt="Certificate 2" class="certificate-image">
+        <button class="toggle-button">View Certificate</button>
+    </div>
+    
+    <div class="certificate">        
+        <div class="certificate-title">Web Development</div>
+        <div class="certificate-description">Throughout this captivating online program, I have established a strong foundation in web development and have acquired practical expertise in crafting interactive and responsive websites. Through hands-on projects and in-depth modules, I have refined my skills in HTML for structuring web content, CSS for styling and layout, and JavaScript for dynamic and interactive functionality.</div>
+
+        <img src="images/web.png" alt="Certificate 3" class="certificate-image">
+        <button class="toggle-button">View Certificate</button>
+    </div>
+
+    <script>
+        var toggleButtons = document.querySelectorAll('.toggle-button');
+        toggleButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                var image = this.parentNode.querySelector('.certificate-image');
+                if (image.style.display === 'none' || image.style.display === '') {
+                    image.style.display = 'block';
+                    this.textContent = 'Hide Certificate';
+                } else {
+                    image.style.display = 'none';
+                    this.textContent = 'View Certificate';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
